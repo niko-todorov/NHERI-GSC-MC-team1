@@ -1,0 +1,3 @@
+https://earthquake.usgs.gov/earthquakes/eventpage/us6000jllz/shakemap/intensity
+https://earthquake.usgs.gov/earthquakes/eventpage/us6000jlqa/shakemap/intensity
+
