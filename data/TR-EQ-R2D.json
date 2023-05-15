@@ -1,0 +1,106 @@
+{
+    "Applications": {
+        "Building": {
+            "Application": "CSV_to_BIM",
+            "ApplicationData": {
+                "buildingSourceFile": "buildings-testing10k.csv",
+                "filter": "1-10000",
+                "pathToSource": "{Current_Dir}/inv"
+            }
+        },
+        "DL": {
+            "Application": "pelicun",
+            "ApplicationData": {
+                "DL_Method": "HAZUS MH EQ IM",
+                "Realizations": 5,
+                "coupled_EDP": false,
+                "detailed_results": false,
+                "event_time": "off",
+                "ground_failure": false,
+                "log_file": true
+            }
+        },
+        "Events": [
+            {
+                "Application": "SimCenterEvent",
+                "ApplicationData": {
+                },
+                "EventClassification": "Earthquake"
+            }
+        ],
+        "Modeling": {
+            "Application": "MDOF-LU",
+            "ApplicationData": {
+                "hazusData": "HazusData.txt",
+                "pathToHazusFile": "{Current_Dir}/E:/R2D/applications/createSAM/MDOF-LU/data",
+                "stdDamping": 0.1,
+                "stdStiffness": 0.1
+            }
+        },
+        "RegionalEvent": {
+            "Application": "UserInputShakeMap",
+            "ApplicationData": {
+                "Directory": "{Current_Dir}/ShakeMap"
+            }
+        },
+        "RegionalMapping": {
+            "Application": "NearestNeighborEvents",
+            "ApplicationData": {
+                "neighbors": 4,
+                "samples": 5,
+                "seed": 166
+            }
+        },
+        "Simulation": {
+            "Application": "IMasEDP",
+            "ApplicationData": {
+            }
+        }
+    },
+    "Author": "SimCenter",
+    "DL": {
+    },
+    "Modeling": {
+    },
+    "Name": "R2D Analysis",
+    "RegionalEvent": {
+        "eventFile": "",
+        "eventFilePath": "",
+        "units": {
+            "PGA": "g"
+        }
+    },
+    "RegionalMapping": {
+    },
+    "Simulation": {
+        "type": "IMasEDP"
+    },
+    "WorkflowType": "Parametric Study",
+    "assets": {
+        "buildings": true,
+        "gas": false,
+        "soil": false,
+        "transportation": false,
+        "waste": false,
+        "water": false
+    },
+    "outputs": {
+        "BIM": false,
+        "DM": true,
+        "DV": true,
+        "EDP": true,
+        "IM": false,
+        "every_realization": false
+    },
+    "randomVariables": [
+    ],
+    "remoteAppDir": "/work2/00477/tg457427/stampede2/SimCenterBackendApplications/v2.5.2",
+    "runDir": "{Current_Dir}/C:/Users/todorov/Faculty/OneDrive - Chapman University/Documents/R2D/LocalWorkDir",
+    "runType": "runningRemote",
+    "type": "Earthquake",
+    "units": {
+        "force": "kN",
+        "length": "m",
+        "time": "sec"
+    }
+}
