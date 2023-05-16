@@ -3,7 +3,7 @@
         "Building": {
             "Application": "CSV_to_BIM",
             "ApplicationData": {
-                "buildingSourceFile": "buildings-testing10k.csv",
+                "buildingSourceFile": "buildings-10k.csv",
                 "filter": "1-10000",
                 "pathToSource": "{Current_Dir}/inv"
             }
