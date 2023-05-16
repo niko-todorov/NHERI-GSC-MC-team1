@@ -64,7 +64,7 @@
     },
     "Name": "R2D Analysis",
     "RegionalEvent": {
-        "eventFile": "",
+        "eventFile": "C:/Users/todorov/Faculty/OneDrive - Chapman University/Documents/R2D/RemoteWorkDir/tmp.SimCenter/input_data\\\\EventGrid.csv",
         "eventFilePath": "",
         "units": {
             "PGA": "g"
